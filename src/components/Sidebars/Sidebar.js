@@ -100,7 +100,7 @@ const Sidebar = (props) => {
           
           {/* Navigation */}
           <Nav navbar>
-          <NavItem>
+            <NavItem>
               <NavLink
                 to='/upcoming-launches'
                 tag={NavLinkRRD}
@@ -109,6 +109,18 @@ const Sidebar = (props) => {
               >
                 <i className='ni ni-spaceship text-orange' />
                 Upcoming Launches
+              </NavLink>
+            </NavItem>
+
+            <NavItem>
+              <NavLink
+                to='/past-launches'
+                tag={NavLinkRRD}
+                onClick={closeCollapse}
+                activeClassName="active"
+              >
+                <i className='ni ni-spaceship text-primary' />
+                Past Launches
               </NavLink>
             </NavItem>
           </Nav>
