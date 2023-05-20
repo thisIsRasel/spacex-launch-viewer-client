@@ -7,22 +7,19 @@ var routes = [
     path: "/launches/:flightNumber",
     name: "User Profile",
     icon: "ni ni-spaceship text-red",
-    component: LaunchDetail,
-    layout: "/admin"
+    component: LaunchDetail
   },
   {
     path: "/upcoming-launches",
     name: "Launches",
     icon: "ni ni-spaceship text-red",
-    component: UpcomingLaunches,
-    layout: "/admin"
+    component: UpcomingLaunches
   },
   {
     path: "/past-launches",
     name: "Launches",
     icon: "ni ni-spaceship text-red",
-    component: PastLaunches,
-    layout: "/admin"
+    component: PastLaunches
   },
 ];
 

@@ -1,7 +1,6 @@
 import React from "react";
 import { useLocation, Route, Switch, Redirect } from "react-router-dom";
 
-import AppNavbar from "components/Navbars/AppNavbar";
 import Sidebar from "components/Sidebars/Sidebar.js";
 
 import routes from "routes.js";
@@ -40,7 +39,6 @@ const AppLayout = (props) => {
         }}
       />
       <div className="main-content" ref={mainContent}>
-        <AppNavbar/>
         <Switch>
           {getRoutes(routes)}
           <Redirect from="*" to="/upcoming-launches" />
