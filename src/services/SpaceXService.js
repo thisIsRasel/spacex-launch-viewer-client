@@ -17,3 +17,12 @@ export async function getPastLaunches(pageNumber = 1) {
         return [];
     }
 }
+
+export async function getLaunchByFlightNumber(flightNumber) {
+    try {
+        const response = await fetch(`${SpaceXApiBaseUrl}/spacex/launches/${flightNumber}`);
+        return await response.json();
+    } catch (error) {
+        return [];
+    }
+}
