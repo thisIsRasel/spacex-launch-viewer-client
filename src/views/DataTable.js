@@ -15,6 +15,7 @@ import {
     const data = props.data;
     const pageNumber = props.pageNumber;
     const setPageNumber = props.setPageNumber;
+    const MAX_RECORDS_PER_PAGE = 10;
   
     const incrementPageNumber = (e) => {
       e.preventDefault();
@@ -87,7 +88,7 @@ import {
                       <span className="sr-only">Previous</span>
                     </PaginationLink>
                   </PaginationItem>
-                  <PaginationItem className={data.length < 10 ? "disabled" : ""}>
+                  <PaginationItem className={data.length < MAX_RECORDS_PER_PAGE ? "disabled" : ""}>
                     <PaginationLink
                       href="#pablo"
                       onClick={(e) => incrementPageNumber(e)}
