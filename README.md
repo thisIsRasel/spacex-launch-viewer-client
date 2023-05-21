@@ -5,7 +5,7 @@ This is a React application that allows users to view information about past and
 Before running the application, ensure the following prerequisites are met:
 
 * Node.js: Install Node.js on your machine. You can download it from the official Node.js website: https://nodejs.org
-* SpaceX API: Make sure the server application is up & running because this will use the endpoints from the server api project.
+* [SpaceX API](https://github.com/thisIsRasel/spacex-launch-viewer-server.git): Make sure the server application is up & running because this will use the endpoints from the server api project.
 
 ## Installation
 To run the application locally, follow these steps:
